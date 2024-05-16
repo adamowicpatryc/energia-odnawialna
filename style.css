@@ -1,0 +1,412 @@
+:root {
+    --nav-height: 0px; 
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;        
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #141414;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 9;
+    overflow: hidden; 
+    background-color: #141414;
+    padding: 10px 20px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#navcontent {
+    display: flex;
+    align-items: center;
+    max-width: 2560px;
+}
+
+#navbuttons {
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+#navbuttons a:hover {
+    color: #DCDCDC; 
+    transition: 0.2s;
+}
+
+.navbutton {
+    font-size: 22px;
+    float: right; 
+    display: block; 
+    text-decoration: none; 
+    padding: 0px 25px; 
+}
+
+#navtitle {
+    display: block;
+    font-size: 31px;
+    cursor: default;
+}
+
+#navico {
+    display: none;
+}
+
+#navico2 {
+    display: none;
+    margin-right: 4vh;
+}
+
+#check {
+    cursor: pointer;
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+#footer {
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 200;
+    background-color: #141414;
+}
+
+#footer h2{
+    font-weight: 300;
+}
+
+
+#footer ul {
+    padding-left: 1vh;
+    list-style-type: none;
+}
+        
+
+#footericon {
+    width: 30%;
+    font-size: 1.75vh;
+}
+
+#footericon img {
+    width: 6vh;
+}
+
+#footercolumn {
+    padding-left: 10vh;
+    font-size: 2vh;
+}
+
+#footercolumn a {
+    text-decoration: none;
+}
+
+.maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--nav-height));
+}
+
+.contentbox25m, .contentbox15m, .sec4mindiv {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding:10vh;
+}
+
+.contentbox15m, .sec4mindiv {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.sec4mindiv {
+    display: flex;
+    height: 30vh;
+    font-size: 2.5vh;
+    padding: 4vh;
+}
+
+.sec4mindiv p, .sec4mindiv img  {
+    margin: 2vh;
+    box-shadow: rgba(10, 10, 10, 0.15) 0px 48px 100px 0px;
+}
+
+.sec4mindiv img {
+    height: 100%;
+    width: auto;
+}
+
+.sec_txt {
+    mix-blend-mode: overlay;
+    font-size: 4vh;
+    font-style: italic;
+}
+
+.sec_txt h1 {
+    font-weight: 500;
+}
+
+.sec_txt h2 {
+    font-weight: 400;
+}
+
+#home_sec, .sec3, .sec5, #sun_sec, #sun_sec2, #wind_sec2, #windfarmsloc, #water_sec2 {
+    background-image: url(files/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.sec3box {
+    width: 30%;
+    margin-left: 50%;
+}
+
+.sec, .sec2, .sec3, .sec5, #sun_sec2, #wind_sec2, #windfarmsloc, #water_sec2 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sec2, .sec3, .sec4, #sun_sec2, #wind_sec2, #windfarmsloc, #water_sec2 {
+    height: auto;
+    font-size: 3vh;
+    font-style: italic;
+    text-shadow: rgba(10, 10, 10, 0.15) 0px 48px 100px 0px;
+}
+
+.sec3 {
+    height: 60vh;
+    text-align: right;
+    background-image: url(files/bg2.png);
+}
+
+.sec4 {
+    padding: 6vh;
+}
+.sec5 {
+    background-image: url(files/bg3.png);
+}
+
+.sec5txt {
+    width: 40%;
+    font-size: 2.5vh;
+    text-shadow: rgba(10, 10, 10, 0.15) 0px 48px 100px 0px;
+}
+
+.sec5txt img {
+    height: 12vh;
+    width: auto;
+}
+
+#sun_sec {
+    background-image: url(files/sunenegrgy.jpg);
+}
+
+.desc_sec {
+    font-size: 3.25vh;
+    text-align: center;
+}
+
+#sun_sec2, #wind_sec2, #windfarmsloc, #water_sec2 {
+    background-image: url(files/dessert.png);
+    padding: 10vh;
+}
+
+.sec2 li {
+    margin: 1vh;
+}
+
+.sec2 hr {
+    margin-top: 6%;
+    margin-bottom: 11%;
+}
+
+#wind_sec {
+    background-image: url(files/turbine.jpg);
+}
+
+#wind_sec2 {
+    background-image: url(files/farmland.png);
+}
+
+.compare_box {
+    width: 50%;
+    padding: 10vh;
+    font-size: 2.5vh;
+}
+
+#windfarmsloc {
+    background-image: url(files/earth.jpg);
+}
+
+#water_sec {
+    background-image: url(files/ocean.jpg);
+}
+
+#water_sec2 {
+    background-image: url(files/waterturbine.jpg);
+}
+
+@media (min-width: 2600px) {
+    #navcontent {
+        margin: auto;
+    }
+}
+
+@media (max-width: 1700px) {
+    .sec4mindiv {
+        font-size: 2.125vh;
+    }
+}
+
+@media (max-width: 1450px){
+    .sec4mindiv {
+        font-size: 1.7vh;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contentbox25m, .contentbox15m, .sec4mindiv {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .sec3box {
+        width: 50%;
+        margin-left: 20%;
+    }
+    .sec5txt {
+        width: 60%;
+    }
+    .sec2 {
+        flex-direction: column;
+    }
+    .compare_box {
+        width: 80%;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .sec2 hr {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #sun_sec2 {
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+}
+
+@media (max-width: 1150px) {
+    #footer {
+        flex-wrap: wrap;
+    }
+    #footericon {
+        width: 50%;
+    }
+    #footercolumn {
+        width: 50%;
+        padding: 2vh;
+    }
+}
+
+@media (max-width: 1100px) {
+    .sec4mindiv {
+        font-size: 1.5vh;
+    }
+}
+
+@media (max-width: 950px) {
+    .contentbox25m, .contentbox15m, .sec4mindiv {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .sec3box {
+        width: 100%;
+        margin: 5vh
+    }
+    .sec4mindiv {
+        flex-direction: column;
+        height: 80vh;
+        font-size: 2.5vh;
+    }
+    .sec4mindiv img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width: 880px) {
+    #navico {
+        display: block;
+        margin-right: 4vh;
+    }
+    .navbutton {
+        display: none;
+    }
+    #sidebar {
+        position: fixed;
+        top: 0; 
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        flex-direction: column;
+        justify-content:center;
+        background-color: rgb(20, 20, 20);
+    }
+    .sidebarli{
+        font-size: 35px;
+        text-decoration: none; 
+        color: white;
+        padding: 20px 45px; 
+    }
+    #sidebar hr{
+        color: white;
+        width: 40%;
+        margin: 20px 45px; 
+    }
+    #sbtext{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    #footericon {
+        width: 100%;
+    }
+    #footercolumn {
+        width: 100%;
+    }
+    .sec5txt {
+        width: 80%;
+    }
+    .contentbox25m, .contentbox15m {
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .sec4mindiv {
+        padding: 0;
+        height: auto;
+    }
+    .sec_txt {
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .sec4 {
+        padding-left: 0vh;
+        padding-right: 0vh;
+    }
+}
